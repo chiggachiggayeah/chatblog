@@ -183,7 +183,7 @@ function parseInput(e){
   Jordan wanted to see if blogs could be conversational, and what a markup language for creating
   bots might look like. You can ask about his recent projects and his latest thought. You can also
   ask for more info on the chatblog. To quit a conversation loop, just enter: 'q'. If you need help, enter: '?'`);
-  get("http://localhost:8080/", function(d){
+  get("http://jkhall.me/chatblog/compiled.json", function(d){
     // console.log(JSON.stringify(d));
     // now we have the data
     var conversations = d.map(function(c){
